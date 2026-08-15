@@ -1,0 +1,27 @@
+{
+  "name": "pulse-api",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Pulse — team productivity API (Amalgam E2E fixture)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test tests/smoke.test.js",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "lodash": "4.17.15",
+    "axios": "^1.6.0",
+    "mongoose": "^8.0.0",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
