@@ -27,7 +27,7 @@ Amalgam E2E test repo (auto-deleted)
 
 - **Repository:** [athPATIL247/amalgam-e2e-1786769057658](https://github.com/athPATIL247/amalgam-e2e-1786769057658)
 - **Branch:** `main`
-- **Last commit:** `manual-` - E2E manual scan
+- **Last commit:** `ec103a3` - fix: release 0.2.1 — dependency and infra updates
 
 ## Tech Stack
 
@@ -79,9 +79,7 @@ Copy `.env.example` to `.env` and fill in the values below.
 
 | Variable | Required | Description | Example |
 |----------|----------|-------------|---------|
-| `JWT_SECRET` | Required | Secret key used to sign JWT access tokens | `change-me-in-production` |
-| `MONGODB_URI` | Required | MongoDB connection string (Atlas or local) | `mongodb://localhost:27017/pulse` |
-| `PORT` | Optional | Port number the server listens on | `3000` |
+| `env` | Required | Environment variable for Terraform | `dev` |
 
 ---
 
@@ -89,6 +87,6 @@ Copy `.env.example` to `.env` and fill in the values below.
 
 *This README was autonomously generated and maintained by*
 *[**Amalgam Docryx**](https://github.com) - the autonomous documentation engine.*
-*Last updated: 2026-08-15 . Commit: `manual-`*
+*Last updated: 2026-08-15 . Commit: `ec103a3`*
 
 </div>
