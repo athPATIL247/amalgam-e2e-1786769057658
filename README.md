@@ -1,19 +1,94 @@
-# Pulse API
+<div align="center">
 
-A small Express service used as an **Amalgam E2E fixture** — looks like a real SaaS backend.
+# amalgam-e2e-1786769057658
 
-## Stack
+> Amalgam E2E test repo (auto-deleted)
 
-- Node.js 20 + Express
-- MongoDB (mongoose)
-- Terraform on AWS (see `infrastructure/`)
-- GitHub Actions CI
+</div>
 
-## Run locally
+---
+
+<div align="center">
+
+[![Express.js](https://img.shields.io/badge/Express.js-powered-000000?logo=express&logoColor=white)](https://img.shields.io/badge/Express.js-powered-000000?logo=express&logoColor=white)
+[![MongoDB](https://img.shields.io/badge/MongoDB-powered-47A248?logo=mongodb&logoColor=white)](https://img.shields.io/badge/MongoDB-powered-47A248?logo=mongodb&logoColor=white)
+[![Axios](https://img.shields.io/badge/Axios-enabled-6e6e6e?logoColor=white)](https://img.shields.io/badge/Axios-enabled-6e6e6e?logoColor=white)
+[![Docker](https://img.shields.io/badge/Docker-powered-2496ED?logo=docker&logoColor=white)](https://img.shields.io/badge/Docker-powered-2496ED?logo=docker&logoColor=white)
+[![Docker Compose](https://img.shields.io/badge/Docker_Compose-powered-2496ED?logo=docker&logoColor=white)](https://img.shields.io/badge/Docker_Compose-powered-2496ED?logo=docker&logoColor=white)
+[![Terraform](https://img.shields.io/badge/Terraform-enabled-6e6e6e?logoColor=white)](https://img.shields.io/badge/Terraform-enabled-6e6e6e?logoColor=white)
+[![Node.js](https://img.shields.io/badge/Node.js->=20-339933?logo=nodedotjs&logoColor=white)](https://img.shields.io/badge/Node.js->=20-339933?logo=nodedotjs&logoColor=white)
+[![Built with](https://img.shields.io/badge/Built_with-Amalgam-7c3aed?logoColor=white)](https://img.shields.io/badge/Built_with-Amalgam-7c3aed?logoColor=white)
+
+</div>
+
+## Overview
+
+Amalgam E2E test repo (auto-deleted)
+
+- **Repository:** [athPATIL247/amalgam-e2e-1786769057658](https://github.com/athPATIL247/amalgam-e2e-1786769057658)
+- **Branch:** `main`
+- **Last commit:** `manual-` - E2E manual scan
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| Backend | Express.js |
+| Database | MongoDB (Mongoose) |
+| Tooling | Axios |
+| Tooling | Docker |
+| Tooling | Docker Compose |
+| Tooling | Terraform |
+
+## Getting Started
+
+### Prerequisites
+
+- **Node.js** v18+
+- **npm** v9+ or **pnpm**
+- **MongoDB** (Atlas free tier or local)
+- **Redis** (local or Upstash)
+
+### Installation
 
 ```bash
-npm install
-npm start
+# 1. Clone the repository
+git clone https://github.com/athPATIL247/amalgam-e2e-1786769057658.git
+cd amalgam-e2e-1786769057658
+
+# 2. Install dependencies
+# API Server
+cd apps/api && npm install
+
+# Web Dashboard
+cd ../web && npm install
+
+# 3. Configure environment variables
+cp apps/api/.env.example apps/api/.env
+# Edit apps/api/.env with your credentials
+
+# 4. Start development servers
+# In separate terminals:
+cd apps/api && npm run dev
+cd apps/web && npm run dev
 ```
 
-Default port: `3000`
+## Environment Variables
+
+Copy `.env.example` to `.env` and fill in the values below.
+
+| Variable | Required | Description | Example |
+|----------|----------|-------------|---------|
+| `JWT_SECRET` | Required | Secret key used to sign JWT access tokens | `change-me-in-production` |
+| `MONGODB_URI` | Required | MongoDB connection string (Atlas or local) | `mongodb://localhost:27017/pulse` |
+| `PORT` | Optional | Port number the server listens on | `3000` |
+
+---
+
+<div align="center">
+
+*This README was autonomously generated and maintained by*
+*[**Amalgam Docryx**](https://github.com) - the autonomous documentation engine.*
+*Last updated: 2026-08-15 . Commit: `manual-`*
+
+</div>
